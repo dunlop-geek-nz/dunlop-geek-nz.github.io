@@ -4,8 +4,6 @@ layout: page
 ---
 <img src="/assets/img/titlelogo2.png" alt="logo"><br>
 
-<center>To add a new post use the <a href="https://www.dunlop.geek.nz/admin">Admin Site</a></center>
-
 {% assign pinned = site.posts | where: 'pin', 'true' %}
 {% assign default = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 
